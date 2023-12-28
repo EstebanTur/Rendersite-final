@@ -25,7 +25,7 @@
   <body class="bodystyle">
     <div class="container-fluid p-0">
       <div class="row mx-0 w-100">
-        <div class="side-menu text-center d-none col-1 col-md-4 d-flex flex-column">
+        <div class="side-menu text-center d-none col-1 col-md-4 d-flex flex-column position-fixed">
           <!-- Contenido del menú lateral se agregará con JavaScript -->
         </div>
         <nav class="navbar navbar-dark col-12 bg-transparent">
@@ -111,37 +111,54 @@
             </div>
           </div>
         </nav>
-        <main class="container col-12 col-md-8 mt-1 mt-md-5   contact-main ">
+        <main class="container col-12 col-lg-10  mt-md-5 mx-0   contact-main ">
           <div class="contact-page row  animate__animated animate__fadeIn">
-            <div class="col-12 col-md-4">
-              <div class="">
-                <h1>Contact</h1>
+            <div class="">
+              <h1>Welcome to Our Contact Section:</h1>
+              <div class="contact-text animate-entry">
+                <p>
+                  We are at your service to assist you in every phase of your architectural and design project.
+                  If you are ready to turn your concepts into outstanding visual representations, our professional
+                  team is prepared to collaborate. Whether you need to discuss the details of your upcoming initiative,
+                  obtain additional information about our visualization services, or simply explore creative possibilities,
+                  we cordially invite you to get in touch with us.
+                  <br><br>
+                  Feel free to embark on this stimulating journey with us. We are excited about the opportunity to contribute
+                  to the success of your project and take it to new levels of excellence. Your vision is our priority, and we look
+                  forward to the prospect of working together.
+                </p>
               </div>
+            </div>
+            <div class="col-12 ">
               <div class="contact-content">
-                <div class="contact-text animate-entry">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla facilisi. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Nulla facilisi. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Nulla facilisi. Lorem ipsum
-                  </p>
-                </div>
-                <div class="contact-details">
-                  <div class="contact-box mt-2 mb-4 mt-md-5">
-                    <h2 class="h5">Javier Abalos</h2>
-                    <p class="mb-1">Operator</p>
+                <div class="contact-details row align-content-around ">
+                  <div class="contact-box mt-2 mb-4 mt-md-5 col-6">
+                    <h2 class="h5">General questions</h2>
+                    <p class="mb-3">If you have a question or comment, please reach out:
+                    </p>
                     <a
-                      class="text-decoration-none text-white"
-                      href="mailto:email2@example.com"
+                      class="text-decoration-none text-white text-decoration-underline "
+                      href="mailto:info@xbaviual.com"
                       >info@xbavisual.com</a
+                    >
+                  </div>
+                  <div class="contact-box mt-2 mb-4 mt-md-5 col-6">
+                    <h2 class="h5">Join the team</h2>
+                    <p class="mb-3">If you are interested in joining our team,
+                      please send your CV and portfolio to:
+                    </p>
+                    <a
+                      class="text-decoration-none text-white text-decoration-underline"
+                      href="mailto:jobs@xbavisual.com"
+                      >jobs@xbavisual.com</a
                     >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-8 ">
+            <div class="">
               <div class="container ">
-                <h2 class="h2 text-left ">Contact Form</h2>
+                <!-- <h2 class="h2 text-left ">Contact Form</h2> -->
                 <form
                   class="contact-form w-100 m-0"
                   action="./css/enviar.php"
@@ -190,8 +207,7 @@
           </div>
         </main>
         <footer
-          class="footer container-fluid mb-0 service-footer-mobile contact-mobile-footer fixed-bottom"
-        >
+        class="footer container-fluid mb-0 position-relative ">
           <div class="container-fluid">
             <div class="row">
               <div

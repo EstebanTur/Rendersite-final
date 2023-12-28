@@ -171,7 +171,7 @@ li h6:hover {
   padding: 10px; /* Espaciado interno del footer */
   text-align: center; /* Alineación del contenido del footer */
   font-size: 14px; /* Tamaño de fuente del texto del footer */
-  position: fixed !important;
+  position: fixed;
   justify-content: space-between;
 }
 
@@ -194,7 +194,7 @@ li h6:hover {
     height: 100% !important;
   }
   .index-footer-mobile {
-    position: fixed;
+    position: fixed !important;
   }
   .inner-social-icons-container {
     margin-top: 25svh;
@@ -285,9 +285,11 @@ li h6:hover {
     bottom: 0;
   }
   .footer-work,
-  .contact-mobile-footer {
-    position: relative !important;
+  .contact-mobile-footer,
+  .footer {
+    /* position: relative !important; */
     height: fit-content;
+    position: relative;
   }
   .contenedor-lista-detalle {
     display: none;
@@ -364,9 +366,9 @@ li h6:hover {
     text-align: center;
   }
   .container-index {
-    -ms-flex: 0 0 75% !important;
-    flex: 0 0 75% !important;
-    max-width: 75% !important;
+    -ms-flex: 0 0 85% !important;
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
   }
   .general-container {
     display: none;
@@ -385,9 +387,12 @@ li h6:hover {
     margin: 0 auto;
   }
   .footer {
-    position: fixed;
     bottom: 0;
     height: 5vh;
+  }
+  .contact-main {
+    margin-bottom: 0;
+    margin-left: 16.6% !important;
   }
 }
 @media (max-width: 768px) {
@@ -448,6 +453,7 @@ li h6:hover {
 .work-main {
   margin-right: 0;
   padding-right: 0;
+  padding-left: 0;
   height: 95vh;
   overflow: auto;
 }
@@ -535,10 +541,7 @@ li h6:hover {
 
 /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */
 .contact-main {
-  height: 90vh;
-
-  padding-bottom: 20vh !important;
-  padding-top: 10vh !important;
+  margin-bottom: 10vh;
 }
 
 @media (min-width: 768px) {
@@ -549,14 +552,13 @@ li h6:hover {
 }
 @media (max-width: 768px) {
   .contact-main {
-    height: 90vh;
     /* right and left padding of 10px */
 
     padding-left: 10px;
     padding-right: 10px;
 
-    padding-bottom: 20vh !important;
     padding-top: 10px !important;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 550px) {
@@ -573,6 +575,9 @@ li h6:hover {
 @media (min-width: 1500px) {
   body {
     font-size: 1rem;
+  }
+  .contact-main {
+    margin-bottom: 0;
   }
 }
 
