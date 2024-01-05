@@ -5,10 +5,7 @@ body {
   font-size: 0.8rem;
   height: 100%;
 }
-h1,
-h2,
-h3,
-h4 {
+h1 {
   font-weight: 600 !important;
 }
 .service-second-tittle {
@@ -54,7 +51,7 @@ li h6:hover {
   text-align: left;
 }
 .links-browser {
-  margin-top: 40px;
+  margin-top: 20%;
 }
 
 /* Iconos de redes */
@@ -79,6 +76,9 @@ li h6:hover {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+.introduction-index {
+  font-weight: 600;
 }
 
 /* carousel propiedades de imagen  */
@@ -360,15 +360,15 @@ li h6:hover {
 
 @media (min-width: 992px) {
   .side-menu-index {
-    -ms-flex: 0 0 15% !important;
-    flex: 0 0 15% !important;
-    max-width: 15% !important;
+    -ms-flex: 0 0 10% !important;
+    flex: 0 0 10% !important;
+    max-width: 10% !important;
     text-align: center;
   }
   .container-index {
-    -ms-flex: 0 0 85% !important;
-    flex: 0 0 85% !important;
-    max-width: 85% !important;
+    -ms-flex: 0 0 90% !important;
+    flex: 0 0 90% !important;
+    max-width: 90% !important;
   }
   .general-container {
     display: none;
@@ -392,7 +392,15 @@ li h6:hover {
   }
   .contact-main {
     margin-bottom: 0;
-    margin-left: 16.6% !important;
+    margin-left: 10% !important;
+  }
+  .work-main {
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .action-button-container {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -457,16 +465,18 @@ li h6:hover {
   height: 95vh;
   overflow: auto;
 }
+
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3px; /* Ajustamos la separación entre imágenes */
+  grid-gap: 5px; /* Ajustamos la separación entre imágenes */
   /* Eliminamos el margen inferior */
   padding: 0;
   overflow: hidden;
+  padding-right: 5px;
 }
 .bodystyle-work {
-  padding-top: 3px;
+  padding-top: 5px;
   padding-right: 0px;
 }
 @media (max-width: 768px) {
@@ -490,6 +500,11 @@ li h6:hover {
 @media (min-width: 768px) and (max-width: 992px) {
   .grid-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .work-main {
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
   }
 }
 .work-column {
@@ -569,6 +584,7 @@ li h6:hover {
 
 .padding-right {
   padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 /*Aumento de tamaño de letra para pantallas extra grandes*/
@@ -621,4 +637,19 @@ li h6:hover {
   -moz-filter: blur(8px);
   -o-filter: blur(8px);
   -ms-filter: blur(8px);
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+@media (max-width: 992px) {
+  .contact-details {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-box a {
+    font-size: 1rem;
+    display: none;
+  }
 }

@@ -50,24 +50,24 @@ function loadSideMenuContent() {
   // Define el contenido del menú lateral
   const sideMenuContent = `
     <div class=" ">
-    <a class="navbar-brand" href="./index.html"><img src="./img/logo_a_la_izquierda.png" height="60px" alt="" /></a>
+    <a class="navbar-brand" href="./index.html"><img src="./img/logo_a_la_izquierda.png" height="70px" alt="" /></a>
     <ul class="list-unstyled navbar-nav justify-content-end links-browser">
-    <li class="menu-links"><a href="./index.html" class="my-2 text-decoration-none">Home</a></li>
-    <li class="menu-links"><a href="./work.html" class="my-2 text-decoration-none">Work</a></li>
-    <li class="menu-links"><a href="./services.html" class="my-2 text-decoration-none">Services</a></li>
-    <li class="menu-links"><a href="./contact.html" class="my-2 text-decoration-none">Contact</a></li>
+    <li class="menu-links"><a href="./index.html" class="my-0 text-decoration-none">Home</a></li>
+    <li class="menu-links"><a href="./work.html" class="my-0 text-decoration-none">Work</a></li>
+    <li class="menu-links"><a href="./services.html" class="my-0 text-decoration-none">Services</a></li>
+    <li class="menu-links"><a href="./contact.html" class="my-0 text-decoration-none">Contact</a></li>
     </ul>
     </div>
     <div class="social-icons-container">
       <div class="inner-social-icons-container">
+      <a href="https://www.instagram.com/javi_abalos_arq3d/" target="_blank" class="text-decoration-none ">
+        <img src="./img/instalogo.svg" alt="Instagram" height="20px">
+      </a>
         <a href="https://www.facebook.com/javiAbalosArq3d/" target="_blank" class="text-decoration-none  ">
           <img src="img/face-icon.svg" alt="Facebook" height="20px">
         </a>
         <a href="https://www.behance.net/javier_abalos" target="_blank" class="text-decoration-none  ">
           <img src="./img/bhlogo.svg" alt="Twitter" height="20px">
-        </a>
-        <a href="https://www.instagram.com/javi_abalos_arq3d/" target="_blank" class="text-decoration-none ">
-          <img src="./img/instalogo.svg" alt="Instagram" height="20px">
         </a>
       </div>
     </div>
@@ -86,7 +86,7 @@ function loadListContent() {
   let serviceSubDescriptionContent = `
   <div class=" ">
   <h3 class="h4" >3D Modeling</h3>
-  <p class ="text-left">Detailed 3D modeling of both exterior and interior architecture, meticulously crafted using software such as SketchUp or 3ds Max. 
+  <p class ="text-left text-justify">Detailed 3D modeling of both exterior and interior architecture, meticulously crafted using software such as SketchUp or 3ds Max. 
   This intricate modeling process is informed by the project plans, ensuring a highly accurate representation. 
   These 3D models serve a dual purpose: they play a pivotal role in advancing the project's design, while also enabling the generation of 
   photorealistic images and videos that vividly showcase the project's potential.</p>
@@ -95,7 +95,7 @@ function loadListContent() {
     "item-1": `
     <div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >3D Modeling</h3>
-  <p class ="text-left">Detailed 3D modeling of both exterior and interior architecture, meticulously crafted using software such as SketchUp or 3ds Max. 
+  <p class ="text-left text-justify">Detailed 3D modeling of both exterior and interior architecture, meticulously crafted using software such as SketchUp or 3ds Max. 
   This intricate modeling process is informed by the project plans, ensuring a highly accurate representation. 
   These 3D models serve a dual purpose: they play a pivotal role in advancing the project's design, while also enabling the generation of 
   photorealistic images and videos that vividly showcase the project's potential.</p>
@@ -104,35 +104,35 @@ function loadListContent() {
     <div class="animate__animated animate__fadeIn" >
       <h3 class="h4">Exterior Rendering
       </h3>
-      <p class="text-left">We create beautiful photorealistic visualization of the architectural project and its surroundings, taking into account every architectural detail as well as the landscaping design and vegetation. In this way, we obtain beautiful and striking images that help to highlight the project and enchant the client.</p>
+      <p class="text-left text-justify">We create beautiful photorealistic visualization of the architectural project and its surroundings, taking into account every architectural detail as well as the landscaping design and vegetation. In this way, we obtain beautiful and striking images that help to highlight the project and enchant the client.</p>
     </div>`,
     "item-3": `<div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >Interior Rendering</h3>
-  <p class ="text-left">We create beautiful photorealistic visualizations of the interior design project, its equipment and decoration, 
+  <p class ="text-left text-justify">We create beautiful photorealistic visualizations of the interior design project, its equipment and decoration, 
   paying attention to all architectural details and lighting, as well as each specific piece of furniture and decorative element. 
   In this way, we obtain beautiful and impactful images that highlight the project and win over our clients.</p>
   </div>`,
     "item-4": `<div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >Furniture and Product Rendering</h3>
-    <p class ="text-left">We create beautiful and modern 3D environments to showcase your furniture and design objects in the most attractive and impactful way possible. 
+    <p class ="text-left text-justify">We create beautiful and modern 3D environments to showcase your furniture and design objects in the most attractive and impactful way possible. 
     Our goal is to help you create sales catalogs that generate interest and convince your customers that your products are the best option for them. 
     We pay special attention to details and design to create environments that highlight your products and make them stand out.</p>
   </div>`,
     "item-5": `<div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >360/VR Rendering</h3>
-  <p class ="text-left">We create stunning and realistic 360 and VR renderings that showcase your architectural and interior design projects in the most attractive and 
+  <p class ="text-left text-justify">We create stunning and realistic 360 and VR renderings that showcase your architectural and interior design projects in the most attractive and 
   convincing way possible. Our goal is to help you create immersive experiences that generate interest and allow your clients to explore and learn about your 
   projects in a unique and enriching way.</p>
   </div>`,
     "item-6": `<div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >Animations</h3>
-  <p class ="text-left">We create beautiful and engaging 3D animations to showcase your architectural, interior design, and product design projects in the most impactful and convincing way possible. 
+  <p class ="text-left text-justify">We create beautiful and engaging 3D animations to showcase your architectural, interior design, and product design projects in the most impactful and convincing way possible. 
   We pay special attention to details to create animations that highlight your projects and make them stand out. 
   Our goal is to help you create presentations and promotional videos that generate impact and convince your clients that your projects are the best option for them.</p>
   </div>`,
     "item-7": `<div class="animate__animated animate__fadeIn" >
   <h3 class="h4" >Web Development</h3>
-  <p class ="text-left">We design custom websites to promote and sell architectural projects, highlighting their uniqueness. 
+  <p class ="text-left text-justify">We design custom websites to promote and sell architectural projects, highlighting their uniqueness. 
   With advanced features such as 3D visualization and high-quality image galleries, we provide an immersive experience that simplifies product representation.</p>
   </div>`,
   };
