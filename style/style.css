@@ -510,7 +510,7 @@ li h6:hover {
 .work-column {
   display: flex;
   flex-direction: column;
-  grid-gap: 3px;
+  grid-gap: 5px;
 }
 .grid-item {
   position: relative;
