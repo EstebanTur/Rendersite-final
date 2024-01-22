@@ -105,14 +105,20 @@ li h6:hover {
 .slider .slide img {
   height: 100%;
   object-fit: cover;
-  filter: grayscale(80%);
+
   transition: all 0.3s ease;
   transition: width 2s ease;
   cursor: pointer;
   margin-right: 5px;
 }
-.slider .slide img:hover {
-  filter: grayscale(0%);
+
+@media (min-width: 992px) {
+  main {
+    filter: grayscale(80%);
+  }
+  main:hover {
+    filter: grayscale(0%);
+  }
 }
 @keyframes scroll {
   from {
@@ -437,7 +443,10 @@ li h6:hover {
   #container-descriptivo,
   #serviceSubDescription,
   .img-group-container {
-    display: none !important;
+    display: none;
+  }
+  .contenedor-lista-detalle {
+    display: none;
   }
   .general-container {
     display: block;

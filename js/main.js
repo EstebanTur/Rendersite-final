@@ -235,25 +235,6 @@ function toggleClass(elementId) {
 
 //REPONSIVE; SEGUN EL TAMAÑO DE PANTALLA PONGO DISPLAY A ELEMENTOS, Y SACO DISPLAY DE OTROS
 function handleScreenSizeChange() {
-  // //Configuracion botones de slider
-  // const prevButton = document.getElementById("antes");
-  // const nextButton = document.getElementById("despues");
-  // const sliderTrack = document.querySelector(".slider-track");
-
-  // // Función para mover el slider hacia la izquierda
-  // function slideLeft() {
-
-  // }
-  // // Función para mover el slider hacia la derecha
-  // function slideRight() {
-
-  // }
-
-  // // Event listener para el botón izquierdo
-  // prevButton.addEventListener("click", slideLeft);
-
-  // // Event listener para el botón derecho
-  // nextButton.addEventListener("click", slideRight);
   if (window.innerWidth > 992) {
     //Foreach para agregar todos los items de la lista
     descriptionService.forEach((DescriptionIndividual, i) => {
@@ -274,7 +255,7 @@ function handleScreenSizeChange() {
     containerDescriptivo.classList.add("d-none");
     serviceSubDescription.classList.add("d-none");
   } else {
-    serviceSubDescription.classList.add("d-none");
+    serviceSubDescription.classList.remove("d-none");
     // Rango intermedio (768px - 992px)
     navbar.classList.remove("d-none"); // Muestra el navbar
     sideMenu.classList.add("d-none"); // Oculta el menú lateral
